@@ -1,0 +1,7 @@
+{
+ "success": false,
+ "data": null,
+ "message": "AI API 调用失败（HTTP 402）（账户余额不足）：{\"error\":{\"message\":\"Insufficient Balance\",\"type\":\"unknown_error\",\"param\":null,\"code\":\"invalid_request_error\"}}",
+ "error_code": "40002",
+ "timestamp": "2026-09-13T05:04:44.344923"
+}

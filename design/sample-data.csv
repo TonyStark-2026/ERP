@@ -1,0 +1,19 @@
+# materials
+material_id,sku,name,unit_cost,criticality,value_score,hs_code
+M001,SKU-001,钢板,12.50,high,85,7208.39
+M002,SKU-002,螺丝,0.05,medium,40,7318.15
+M003,SKU-003,电机,150.00,high,90,8501.52
+
+# purchase_orders
+po_id,supplier,material_id,qty,unit_price,currency,tax_rate,invoice_number,received_date
+PO1001,深圳供应商,M001,100,12.00,CNY,13,INV-2026-001,2026-05-10
+PO1002,全球五金,M002,10000,0.04,CNY,13,INV-2026-002,2026-05-11
+
+# work_orders
+wo_id,product,material_list,start_qty,completed_qty,in_progress_qty,equivalent_output
+WO2001,产品A,"M001:10;M002:50;M003:1",100,60,30,"
+
+# crossborder_orders
+order_id,customer_country,hs_code,declared_value,currency,trade_term,estimated_duty_pct,vat_pct
+XB3001,Mexico,8501.52,2000,USD,FOB,5,16
+XB3002,EU,7208.39,5000,EUR,CIF,3,20

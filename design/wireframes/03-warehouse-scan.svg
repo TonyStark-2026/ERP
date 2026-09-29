@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="40" y="40" font-size="18" fill="#333">仓库扫码 — 入库 / 出库 / 盘点</text>
+  <text x="40" y="64" font-size="12" fill="#666">Warehouse scanning flow — 快速扫码与异常提示</text>
+
+  <rect x="40" y="90" width="540" height="120" fill="#f2f9ff" stroke="#d6eefc"/>
+  <text x="60" y="120" font-size="13" fill="#333">扫描框： [扫描或输入条码]  当前单据：PO1001  已扫描：12/100</text>
+
+  <rect x="600" y="90" width="620" height="300" fill="#fff" stroke="#eee"/>
+  <text x="620" y="120" font-size="13" fill="#666">扫描历史与异常：批次缺失 / 数量超出 / 扫描失败高亮</text>
+
+  <rect x="40" y="230" width="540" height="180" fill="#fff" stroke="#eee"/>
+  <text x="60" y="260" font-size="13" fill="#666">快速操作：确认入库 / 撤销最后一次扫描 / 创建缺失批次</text>
+</svg>

@@ -1,0 +1,35 @@
+@echo off
+chcp 65001 > nul
+title ERP智能体系统 - 手机访问服务（固定端口8000 + 热重载）
+cd /d "%~dp0"
+
+set PY=C:\Users\ruancanling\AppData\Local\Programs\Python\Python38\python.exe
+set SCRIPT=%~dp0_start_mobile_server.py
+
+echo.
+echo ============================================================
+echo   ERP智能体系统 - 手机访问服务器
+echo   固定端口 8000 · 代码更新手机自动热重载
+echo ============================================================
+echo.
+
+if not exist "%PY%" (
+    echo [ERROR] Python 3.8 not found at: %PY%
+    pause
+    exit /b 1
+)
+
+if not exist "%SCRIPT%" (
+    echo [ERROR] 启动脚本不存在: %SCRIPT%
+    pause
+    exit /b 1
+)
+
+echo 正在启动服务（首次启动约3~5秒）...
+echo.
+
+"%PY%" "%SCRIPT%"
+
+echo.
+echo 服务已停止。如需重启请再次双击本文件。
+pause

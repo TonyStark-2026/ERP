@@ -1,0 +1,37 @@
+@echo off
+chcp 65001 >nul
+title 一键复制 ERP智能系统 独立软件
+echo ================================================================
+echo   ERP智能系统 独立软件 - 一键复制到 exam work
+echo ================================================================
+echo.
+
+set SRC=c:\Users\ruancanling\Desktop\ERP VIBE CODING\dist\ERP智能系统
+set DST=C:\Users\ruancanling\Desktop\exam work\ERP智能系统_独立软件
+
+if not exist "%SRC%\ERP智能系统.exe" (
+    echo [ERROR] 源文件不存在，请先在项目目录运行打包
+    pause
+    exit /b 1
+)
+
+echo 正在复制，请稍候...
+if exist "%DST%" rmdir /s /q "%DST%"
+robocopy "%SRC%" "%DST%" /E /NFL /NDL /NJH /NJS /NC /NS /NP
+
+echo.
+echo ================================================================
+echo   复制完成！
+echo ================================================================
+echo.
+echo   软件位置: %DST%
+echo.
+echo   使用方法:
+echo   1. 双击 ERP智能系统.exe 启动
+echo   2. 会自动弹出原生桌面窗口（独立窗口，非浏览器）
+echo   3. 手机扫码访问
+echo.
+echo   或双击【创建桌面快捷方式.bat】创建桌面图标
+echo ================================================================
+echo.
+pause

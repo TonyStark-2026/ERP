@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="40" y="40" font-size="18" fill="#333">采购 / 开票录入</text>
+  <text x="40" y="64" font-size="12" fill="#666">Purchase order & Invoice entry — 税率校验预警占位</text>
+
+  <rect x="40" y="90" width="600" height="220" fill="#f7fbfe" stroke="#dff0fb"/>
+  <text x="60" y="120" font-size="13" fill="#333">供应商： [下拉]  发票号： [文本]  税率： [13%]（若不匹配高亮）</text>
+
+  <rect x="660" y="90" width="560" height="220" fill="#fff" stroke="#ddd"/>
+  <text x="680" y="120" font-size="13" fill="#666">发票校验结果占位（不匹配提示 / 建议操作）</text>
+
+  <rect x="40" y="330" width="1180" height="320" fill="#fff" stroke="#eee"/>
+  <text x="60" y="360" font-size="13" fill="#666">发票条目列表（物料、数量、单价、税额、总额） — 支持导入 CSV</text>
+</svg>

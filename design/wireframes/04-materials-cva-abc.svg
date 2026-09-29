@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="40" y="40" font-size="18" fill="#333">物料档案 — CVA‑ABC 分类</text>
+  <text x="40" y="64" font-size="12" fill="#666">Material master — value & criticality classification</text>
+
+  <rect x="40" y="90" width="760" height="260" fill="#f8fdff" stroke="#eaf8ff"/>
+  <text x="60" y="120" font-size="13" fill="#333">物料信息：SKU / 名称 / 单价 / HS 编码 / 关键性评分</text>
+
+  <rect x="820" y="90" width="400" height="260" fill="#fff" stroke="#eee"/>
+  <text x="840" y="120" font-size="13" fill="#666">CVA‑ABC 分类结果与推荐策略（A: 高频+高价值 → 精细补货）</text>
+
+  <rect x="40" y="370" width="1180" height="300" fill="#fff" stroke="#eee"/>
+  <text x="60" y="400" font-size="13" fill="#666">历史交易与消耗趋势（用于价值评分）</text>
+</svg>
