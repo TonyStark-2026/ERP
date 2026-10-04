@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+SQLAlchemy>=1.4
+python-dotenv
+pymysql
+openpyxl
+reportlab
+requests
+pandas
